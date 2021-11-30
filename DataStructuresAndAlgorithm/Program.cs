@@ -10,7 +10,7 @@ namespace DataStructuresAlgorithm
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("CHOOSE OPTION : 1.Unordered List\n2.OrderedList\n 3.BalancedParanthesis\n 4.CashCounter 5.Exit");
+                Console.WriteLine("CHOOSE OPTION : 1.Unordered List\n2.OrderedList\n 3.BalancedParanthesis\n 4.CashCounter\n 5.Palindrome\n 6.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -31,6 +31,12 @@ namespace DataStructuresAlgorithm
                         cash.CashManager();
                         break;
                     case 5:
+                        Palindrome pal = new Palindrome();
+                        Console.WriteLine("Enter the String");
+                        string str = Console.ReadLine();
+                        pal.PalindromeChecker(str);
+                        break;
+                    case 6:
                         flag = false;
                         break;
 
